@@ -1,0 +1,19 @@
+NasaAPI/obj/NasaAPI.csproj.nuget.g.targets
+.DS_Store
+.vscode/launch.json
+.vscode/tasks.json
+NasaAPI/.DS_Store
+NasaAPI/Properties/launchSettings.json
+NasaAPI/Properties/PublishProfiles/nasaapicahe - Web Deploy.pubxml
+NasaAPI/Properties/PublishProfiles/nasaapicahe - Web Deploy.pubxml.user
+NasaAPI/obj/NasaAPI.csproj.nuget.cache
+NasaAPI/obj/NasaAPI.csproj.nuget.g.props
+NasaAPI/obj/project.assets.json
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.AssemblyInfo.cs
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.AssemblyInfoInputs.cache
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.RazorAssemblyInfo.cache
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.RazorAssemblyInfo.cs
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.assets.cache
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.csproj.CoreCompileInputs.cache
+NasaAPI/obj/Debug/netcoreapp2.1/NasaAPI.csprojAssemblyReference.cache
+NasaAPI/obj/Debug/netcoreapp2.1/project.razor.json
