@@ -27,7 +27,7 @@ namespace NasaAPI.Controllers
         public async Task<PictureOfDay> GetPictureOfDay()
         {
             //Nossa key que identifica o cache.
-            var key = "pictureOfDay";
+            var key = "pictureofday";
             //Tenta buscar o cache utilizando-se da key definida na linha anterior.
             var cache = await _distributedCache.GetAsync(key);
 
@@ -40,7 +40,7 @@ namespace NasaAPI.Controllers
             else
             {
                 //Cria uma data de expiração para o cache, com a data atual + 23:59:59
-                var cacheExpiration = DateTime.Today.AddDays(1).AddTicks(-1).Second;
+                var cacheExpiration = (DateTime.Today.AddDays(1).AddTicks(-1) - DateTime.Now).TotalSeconds;
                 //Chama o metodo que recupera os dados da API da nasa.
                 var pictureOfDay = await _apiService.GetPictureOfDay();
                 //cria o nosso cache no Redis no Azure

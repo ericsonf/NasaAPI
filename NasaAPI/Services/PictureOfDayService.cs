@@ -11,7 +11,7 @@ namespace NasaAPI.Services
         {
             using (var client = new HttpClient())
             {
-                var response = await client.GetAsync("https://api.nasa.gov/planetary/apod?api_key=NASA_KEY");
+                var response = await client.GetAsync("https://api.nasa.gov/planetary/apod?api_key=<SUA_NASA_API_KEY>");
                 var pictureOfDay = new PictureOfDay();
 
                 if (response.IsSuccessStatusCode)
