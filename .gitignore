@@ -100,3 +100,7 @@ Backend/NasaAPI/obj/NasaAPI.csproj.nuget.dgspec.json
 Backend/NasaAPI/obj/NasaAPI.csproj.nuget.g.props
 Backend/NasaAPI/obj/NasaAPI.csproj.nuget.g.targets
 Backend/NasaAPI/obj/project.assets.json
+Backend/.vs/NasaAPI/v16/Server/sqlite3/db.lock
+Backend/.vs/NasaAPI/v16/Server/sqlite3/storage.ide
+Backend/.vs/NasaAPI/v16/Server/sqlite3/storage.ide-shm
+Backend/.vs/NasaAPI/v16/Server/sqlite3/storage.ide-wal
