@@ -3,8 +3,9 @@ mono: none
 sudo: required
 dist: xenial
 dotnet: 2.2
-solution: NasaAPI.sln
+solution: "Backend/NasaAPI.sln"
 
 script:
  - dotnet restore
  - dotnet build
+ 
