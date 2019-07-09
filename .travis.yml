@@ -3,6 +3,9 @@ mono: none
 dotnet: 2.2
 dist: bionic
 sudo: required
+solution: NasaAPI.sln
 
 script:
- - dotnet build Backend/NasaAPI.sln
+ - dotnet restore
+ - dotnet build
+ 
