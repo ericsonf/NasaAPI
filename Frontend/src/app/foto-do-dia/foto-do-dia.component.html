@@ -1,0 +1,7 @@
+<div class="card" *ngIf="foto">
+    <img class="card-img-top" src="{{ foto.url }}" alt="{{ foto.title }}" />
+    <div class="card-body">
+        <h5 class="card-title">{{ foto.title }} ({{ foto.date | date }})</h5>
+        <p class="card-text">{{ foto.explanation }}</p>
+    </div>
+</div>
