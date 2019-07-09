@@ -1,11 +1,10 @@
-language: csharp
+language: csharp  
 mono: none
-sudo: required
-dist: xenial
 dotnet: 2.2
+dist: bionic
+sudo: required
 solution: Backend/NasaAPI.sln
 
 script:
  - dotnet restore
  - dotnet build
- 
