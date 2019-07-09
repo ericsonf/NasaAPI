@@ -3,7 +3,7 @@ mono: none
 dotnet: 2.2
 dist: bionic
 sudo: required
-solution: Backend/NasaAPI.sln
+solution: "Backend/NasaAPI.sln"
 
 script:
  - dotnet restore
