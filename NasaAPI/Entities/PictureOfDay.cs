@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 
 namespace NasaAPI.Entities
 {
-    [JsonObject]
     [Serializable]
     public class PictureOfDay
     {

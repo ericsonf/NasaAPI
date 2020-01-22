@@ -1,5 +1,4 @@
-﻿using System.Threading.Tasks;
-using NasaAPI.Entities;
+﻿using NasaAPI.Entities;
 
 namespace NasaAPI.Interface
 {

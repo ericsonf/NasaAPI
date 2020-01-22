@@ -2,6 +2,7 @@
 using NasaAPI.Interface;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace NasaAPI.Services
 {
@@ -11,12 +12,12 @@ namespace NasaAPI.Services
         {
             using (var client = new HttpClient())
             {
-                var response = await client.GetAsync("https://api.nasa.gov/planetary/apod?api_key=<SUA_NASA_API_KEY>");
+                var response = await client.GetAsync("https://api.nasa.gov/planetary/apod?api_key=<SUA_NASA_KEY>");
                 var pictureOfDay = new PictureOfDay();
 
                 if (response.IsSuccessStatusCode)
                 {
-                    pictureOfDay = await response.Content.ReadAsAsync<PictureOfDay>();
+                    pictureOfDay = await JsonSerializer.DeserializeAsync<PictureOfDay>(await response.Content.ReadAsStreamAsync());
                 }
 
                 return pictureOfDay;
