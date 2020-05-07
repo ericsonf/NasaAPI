@@ -11,7 +11,7 @@ import { catchError, tap } from 'rxjs/operators';
 })
 export class FotoDoDiaComponent implements OnInit {
 
-  private readonly API = 'https://localhost:5001/api/nasaapi';
+  private readonly API = 'http://localhost:5000/api/nasaapi';
   foto: Foto[];
 
   constructor(private http: HttpClient) { }

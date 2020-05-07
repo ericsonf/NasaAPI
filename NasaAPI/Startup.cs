@@ -42,11 +42,7 @@ namespace NasaAPI
             
             app.UseCors(option => option.AllowAnyOrigin());
             
-            app.UseHttpsRedirection();
-
             app.UseRouting();
-
-            app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }

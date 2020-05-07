@@ -14,7 +14,7 @@ namespace NasaAPI.Controllers
         private readonly IPictureOfDay _apiService;
         private readonly IObjectService _objService;
         private readonly IDistributedCache _distributedCache;
-        const string key = "pictureofday";
+        const string key = "picofday";
 
         public NasaApiController(IPictureOfDay apiService, IObjectService objService, IDistributedCache distributedCache)
         {
@@ -39,6 +39,12 @@ namespace NasaAPI.Controllers
                     new DistributedCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromSeconds(cacheExpiration)));
                 return pictureOfDay;
             } 
+        }
+
+        [HttpGet("{id:int}")]
+        public string Get(int id)
+        {
+            return string.Concat("Funcionou: ", id);
         }
     }
 }
