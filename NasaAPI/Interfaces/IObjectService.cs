@@ -1,6 +1,6 @@
-﻿using NasaAPI.Entities;
+using NasaAPI.Entities;
 
-namespace NasaAPI.Interface
+namespace NasaAPI.Interfaces
 {
     public interface IObjectService
     {

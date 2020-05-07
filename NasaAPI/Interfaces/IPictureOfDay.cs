@@ -1,7 +1,7 @@
-﻿using NasaAPI.Entities;
+using NasaAPI.Entities;
 using System.Threading.Tasks;
 
-namespace NasaAPI.Interface
+namespace NasaAPI.Interfaces
 {
     public interface IPictureOfDay
     {

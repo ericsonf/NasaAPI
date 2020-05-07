@@ -1,10 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NasaAPI.Interface;
+using NasaAPI.Interfaces;
 using NasaAPI.Services;
 
 namespace NasaAPI
@@ -26,11 +25,10 @@ namespace NasaAPI
             services.AddCors();
 
             services.AddDistributedRedisCache(options =>
-             {
-                 options.Configuration = Configuration.GetConnectionString("NasaApiConn");
-                 options.InstanceName = "NasaApiCacheTable";
-             });
-
+            {
+                options.Configuration = Configuration.GetConnectionString("NasaApiConn");
+                options.InstanceName = "NasaApiCacheTable";
+            });
             services.AddControllers();
         }
 
@@ -41,16 +39,16 @@ namespace NasaAPI
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            
             app.UseCors(option => option.AllowAnyOrigin());
+            
             app.UseHttpsRedirection();
+
             app.UseRouting();
+
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
         }
     }
 }
